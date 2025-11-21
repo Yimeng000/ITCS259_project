@@ -48,8 +48,86 @@ Delete books
 Fully synced with SQLite and Provider
 
 🛠 Installation & Setup Instructions
+
+If you prefer to develop using Visual Studio Code, follow these steps to create your Flutter project:
+
+1. Install Flutter SDK
+
+Download Flutter from the official site:
+👉 https://flutter.dev/docs/get-started/install
+
+Unzip it and add Flutter to your PATH.
+
+Example (macOS):
+
+export PATH="$PATH:/Users/yourname/flutter/bin"
+
+Check installation:
+
+flutter doctor
+
+2. Install VS Code Extensions
+
+Open VS Code → go to:
+
+Extensions (Ctrl+Shift+X)
+
+Install:
+
+Flutter
+
+Dart
+
+These extensions add:
+✔ Flutter commands
+✔ Code completion
+✔ Device selection
+✔ Hot reload support
+
+3. Create a New Flutter Project
+
+Option A — Using VS Code Command Palette:
+
+Press Ctrl + Shift + P (or Cmd + Shift + P on Mac)
+
+Type: Flutter: New Project
+
+Choose Application
+
+Select a folder
+
+Name your project (e.g., readify_app)
+
+VS Code will automatically generate the whole Flutter project structure
+
+Option B — Using Terminal:
+
+flutter create readify_app
+cd readify_app
+code .
+
+4. Run the Project
+
+In VS Code:
+
+Select a device (Android emulator / iOS simulator / physical device)
+
+Press F5
+or run in terminal:
+
+flutter run
+
+5. Start Coding
+
+Open your main file:
+
+lib/main.dart
+
+
+Then start building your UI pages, models, providers, and database functions.
 1. Clone the repository
-git clone https://github.com/yourusername/readify.git\n
+git clone https://github.com/yourusername/readify.git
+
 cd readify
 
 3. Install Flutter dependencies
