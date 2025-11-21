@@ -48,25 +48,8 @@ Delete books
 Fully synced with SQLite and Provider
 
 🗂️ Project Structure
-lib/
- ├── main.dart
- ├── theme.dart
- ├── models/
- │     └── book.dart
- ├── db/
- │     └── db_service.dart
- ├── providers/
- │     └── book_provider.dart
- ├── pages/
- │     ├── home_page.dart
- │     ├── book_detail_page.dart
- │     ├── add_book_page.dart
- │     ├── reading_note_page.dart
- │     └── book_manage_page.dart
- ├── widgets/
- │     ├── currently_reading_card.dart
- │     ├── want_to_read_card.dart
- │     └── read_card.dart
+![Uploading image.png…]()
+
 
 🛠 Installation & Setup Instructions
 1. Clone the repository
