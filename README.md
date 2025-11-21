@@ -49,8 +49,7 @@ Fully synced with SQLite and Provider
 
 🛠 Installation & Setup Instructions
 1. Clone the repository
-git clone https://github.com/yourusername/readify.git
-
+git clone https://github.com/yourusername/readify.git\n
 cd readify
 
 3. Install Flutter dependencies
@@ -113,5 +112,6 @@ Book recommendations
 
 🙌 Team Members 
 Yimeg Chen 6688176
+
 Zirui Zhu 6688183
 
