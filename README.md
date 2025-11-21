@@ -1,66 +1,91 @@
-Readify – Personal Reading Companion App
+📚 Readify – Personal Reading Companion App
 
 A Flutter + SQLite mobile application
 
 🚀 Overview
 
-Readify is a lightweight mobile reading companion app designed to help users track their reading progress, manage book categories, write personal notes, and store all data locally using SQLite.
-The project follows clean architecture and Provider-based state management, ensuring smooth and responsive user experience.
+Readify is a lightweight mobile reading companion app that helps users track reading progress, manage book categories, write personal notes, and store all data locally using SQLite.
+The project follows clean architecture and uses the Provider package for state management to ensure smooth performance and maintainable code structure.
 
 📌 Key Features
 ✅ Home Page
+
 Displays books across three categories:
+
 Want to Read
+
 Currently Reading
+
 Already Read
-Tap any book to open the Detail Page
+
+Tap any book to open its Detail Page
+
 Add new books through the Add Book Page
 
 ✅ Add Book Page
-Input:
+
+Input fields:
+
 Title
+
 Author
+
 Description
+
 Cover Image URL
-Total pages
+
+Total Pages
+
 Category
-Preview cover image instantly
-Save book to SQLite database
+
+Instant preview of the book cover
+
+Save the book directly into the SQLite database
 
 ✅ Detail Page
-Displays:
+
+Shows:
+
 Cover image
+
 Author
+
 Description
+
 Reviews section
 
 Buttons:
+
 Continue Reading
+
 Write Notes
 
 ✅ Notes Page
-Write and save reading notes
-Data stored in SQLite for persistent access
+
+Write and save personalized reading notes
+
+Notes are stored in SQLite for persistent access
+
+Easily view or edit notes anytime
 
 ✅ Book Management Page
+
 Move books between categories
+
 Delete books
-Fully synced with SQLite and Provider
 
-🛠 Installation & Setup Instructions
+All updates sync with SQLite and the Provider state manager
 
-If you prefer to develop using Visual Studio Code, follow these steps to create your Flutter project:
-
+🛠 Installation & Setup
 1. Install Flutter SDK
 
-Download Flutter from the official site:
+Download Flutter from:
 👉 https://flutter.dev/docs/get-started/install
 
-Unzip it and add Flutter to your PATH.
-
-Example (macOS):
+Add Flutter to your PATH (example for macOS):
 
 export PATH="$PATH:/Users/yourname/flutter/bin"
+
 
 Check installation:
 
@@ -68,77 +93,54 @@ flutter doctor
 
 2. Install VS Code Extensions
 
-Open VS Code → go to:
-
-Extensions (Ctrl+Shift+X)
-
+In VS Code → Extensions (Ctrl + Shift + X)
 Install:
 
 Flutter
 
 Dart
 
-These extensions add:
+These provide:
 ✔ Flutter commands
 ✔ Code completion
 ✔ Device selection
-✔ Hot reload support
+✔ Hot reload
 
 3. Create a New Flutter Project
+Option A — Using VS Code
 
-Option A — Using VS Code Command Palette:
+Press Ctrl + Shift + P
 
-Press Ctrl + Shift + P (or Cmd + Shift + P on Mac)
+Search Flutter: New Project
 
-Type: Flutter: New Project
+Select Application
 
-Choose Application
+Choose a folder
 
-Select a folder
+Enter project name
 
-Name your project (e.g., readify_app)
-
-VS Code will automatically generate the whole Flutter project structure
-
-Option B — Using Terminal:
-
+Option B — Using Terminal
 flutter create readify_app
 cd readify_app
 code .
 
 4. Run the Project
 
-In VS Code:
+VS Code: Press F5
 
-Select a device (Android emulator / iOS simulator / physical device)
-
-Press F5
-or run in terminal:
+Or terminal:
 
 flutter run
 
-5. Start Coding
-
-Open your main file:
-
-lib/main.dart
-
-
-Then start building your UI pages, models, providers, and database functions.
-1. Clone the repository
+📦 Clone This Repository
 git clone https://github.com/yourusername/readify.git
-
 cd readify
-
-3. Install Flutter dependencies
 flutter pub get
-
-4. Run on Android Studio / Emulator
 flutter run
 
-5. Required Dependencies (Already in pubspec.yaml)
+📚 Required Dependencies
 
-Your project should include:
+Make sure your pubspec.yaml includes:
 
 dependencies:
   flutter:
@@ -148,25 +150,23 @@ dependencies:
   path_provider: ^2.0.12
 
 
-If missing, add them and re-run:
+Install dependencies:
+
 flutter pub get
 
-5. iOS devices: Enable network images
+🍎 iOS Configuration (for network images)
 
 Add this to ios/Runner/Info.plist:
 
 <key>NSAppTransportSecurity</key>
 <dict>
-  <key>NSAllowsArbitraryLoads</key>
-  <true/>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
 </dict>
 
+💾 Database (SQLite Schema)
 
-This enables loading images through Image.network().
-
-💾 Database (SQLite)
-
-The SQLite table stores all book fields:
+SQLite table structure:
 
 CREATE TABLE books (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -182,14 +182,19 @@ CREATE TABLE books (
 );
 
 🌟 Future Improvements
+
 Cloud sync
+
 User accounts
+
 Dark mode
-AI reading summary
+
+AI-powered reading summaries
+
 Book recommendations
 
-🙌 Team Members 
-Yimeg Chen 6688176
+👥 Team Members
 
-Zirui Zhu 6688183
+Yimeg Chen — 6688176
 
+Zirui Zhu — 6688183
