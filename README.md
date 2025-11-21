@@ -47,22 +47,19 @@ Move books between categories
 Delete books
 Fully synced with SQLite and Provider
 
-🗂️ Project Structure
-![Uploading image.png…]()
-
-
 🛠 Installation & Setup Instructions
 1. Clone the repository
 git clone https://github.com/yourusername/readify.git
+
 cd readify
 
-2. Install Flutter dependencies
+3. Install Flutter dependencies
 flutter pub get
 
-3. Run on Android Studio / Emulator
+4. Run on Android Studio / Emulator
 flutter run
 
-4. Required Dependencies (Already in pubspec.yaml)
+5. Required Dependencies (Already in pubspec.yaml)
 
 Your project should include:
 
