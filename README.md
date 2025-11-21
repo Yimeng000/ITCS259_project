@@ -11,8 +11,11 @@ The project follows clean architecture and uses the Provider package for state m
 ✅ Home Page
 
 Displays books across three categories:
+
 Want to Read
+
 Currently Reading
+
 Already Read
 
 Tap any book to open its Detail Page
@@ -22,11 +25,17 @@ Add new books through the Add Book Page
 ✅ Add Book Page
 
 Input fields:
+
 Title
+
 Author
+
 Description
+
 Cover Image URL
+
 Total Pages
+
 Category
 
 Instant preview of the book cover
@@ -36,25 +45,35 @@ Save the book directly into the SQLite database
 ✅ Detail Page
 
 Shows:
+
 Cover image
+
 Author
+
 Description
-Reviews section
+
+(Optional) Reviews section
 
 Buttons:
+
 Continue Reading
+
 Write Notes
 
 ✅ Notes Page
 
 Write and save personalized reading notes
+
 Notes are stored in SQLite for persistent access
+
 Easily view or edit notes anytime
 
 ✅ Book Management Page
 
 Move books between categories
+
 Delete books
+
 All updates sync with SQLite and the Provider state manager
 
 🛠 Installation & Setup
@@ -77,7 +96,9 @@ flutter doctor
 In VS Code → Extensions (Ctrl + Shift + X)
 Install:
 
-Flutter & Dart
+Flutter
+
+Dart
 
 These provide:
 ✔ Flutter commands
@@ -163,12 +184,17 @@ CREATE TABLE books (
 🌟 Future Improvements
 
 Cloud sync
+
 User accounts
+
 Dark mode
+
 AI-powered reading summaries
+
 Book recommendations
 
 👥 Team Members
 
 Yimeg Chen — 6688176
+
 Zirui Zhu — 6688183
